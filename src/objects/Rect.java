@@ -6,7 +6,7 @@ import java.awt.Graphics;
 public class Rect extends GObject  {
 
 	private Color color;
-	
+
 	public Rect(int x, int y, int width, int height, Color color) {
 		super(x, y, width, height);
 		this.color = color;
@@ -14,12 +14,15 @@ public class Rect extends GObject  {
 
 	@Override
 	public void paintObject(Graphics g) {
-		// TODO: Implement this method.
+		g.setColor(color);
+		g.drawRect(x, y, width,height);
+		g.fillRect(x, y, width,height);
 	}
-	
+
 	@Override
 	public void paintLabel(Graphics g) {
-		// TODO: Implement this method.
+		// TODO: Implement this method
+		g.drawString("Rectangale", x, y+height+10);
 	}
-	
+
 }
