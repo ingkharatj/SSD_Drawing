@@ -22,7 +22,7 @@ public class Rect extends GObject  {
 	@Override
 	public void paintLabel(Graphics g) {
 		// TODO: Implement this method
-		g.drawString("Rectangale", x, y+height+10);
+		g.drawString("Rectangale", x, y+height+15);
 	}
 
 }
